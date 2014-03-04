@@ -155,6 +155,7 @@ class Migration(SchemaMigration):
             ('location_type', self.gf('django.db.models.fields.CharField')(max_length=1, blank=True)),
             ('parent_station', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['multigtfs.Stop'], null=True, blank=True)),
             ('timezone', self.gf('django.db.models.fields.CharField')(max_length=255, blank=True)),
+            ('wheelchair_boarding', self.gf('django.db.models.fields.CharField')(max_length=255, blank=True)),
         ))
         db.send_create_signal('multigtfs', ['Stop'])
 
